@@ -1,0 +1,33 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+#root {
+  margin-left: calc(50vw - 180px);
+}
+.board {
+  display: grid;
+  width: 350px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background: rgb(22, 141, 96);
+}
+
+.cell {
+  border: 2px solid rgb(255, 230, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
