@@ -166,8 +166,6 @@ class View {
   render() {
     //updates the DOM
     const board = document.createElement('div');
-    let column = document.createElement('div');
-    column.className = 'column';
     board.className = 'board';
     this.cells = Array(42)
       .fill()
@@ -210,9 +208,7 @@ class View {
 class Controller {
   constructor() {
     this.model = new Connect(); //creates the model
-    console.log(this.model);
     this.view = new View(); //creates the viewer
-    console.log(this.view);
 
     this.view.playEvent.addListener((move) => {
       this.model.play(move);
