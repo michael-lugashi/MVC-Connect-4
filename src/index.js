@@ -31,7 +31,7 @@ class Connect {
     if (this.finished) {
       return false;
     }
-    move = this.addtoBottom(move);
+    move = this.addToBottom(move);
     if (move < 0 || move > 42 || this.board[move]) {
       return false; // checks to see if you can place a piece where you decided to place it
     }
@@ -44,7 +44,7 @@ class Connect {
     return true;
   }
 
-  addtoBottom(move) {
+  addToBottom(move) {
     // returns the bottom empty cell value of each column
     //Checks the value of the cell bottom - up until it's undefined
     move = (move % 7) + 35;
